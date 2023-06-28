@@ -5,14 +5,7 @@ class Solution {
                 String x = a+b;
                 String y = b+a;
                 return x.compareTo(y);
-                // int min = Math.min(a.length(),b.length());
-                // boolean equal = true;
-                // for(int i=0;i<min;i++){
-                //     if(a.charAt(i)<b.charAt(i)) return 1;
-                //     if(a.charAt(i)>b.charAt(i)) equal = false;
-                // }
-                // if(equal) return 1;
-                // return -1;
+              
             }else{
                 return a.compareTo(b);
             }
