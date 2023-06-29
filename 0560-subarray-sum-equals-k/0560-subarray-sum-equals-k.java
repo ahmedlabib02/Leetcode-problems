@@ -1,20 +1,16 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
-       ArrayList<Integer> list = new ArrayList<>();
-       int p1 = 0;
-       int p2=0;
-       int res= 0;
-        while(p1<nums.length){
-            int sum=0;
-            while(p2<nums.length){
-                sum+= nums[p2];
-                if(sum==k)
-                    res++;
-                p2++;
-            }
-            p1++;
-            p2=p1;
-        }
+       int sum=0;
+       int res=0;
+       HashMap<Integer,Integer> map = new HashMap<>();
+       map.put(0, 1); 
+       for(int num : nums){
+           sum+= num;
+           int target = sum - k;
+           if(map.containsKey(target))
+             res+=  map.get(target);
+         map.put(sum, map.getOrDefault(sum, 0) + 1);
+       } 
         
         return res;
     }
