@@ -6,8 +6,7 @@ class Solution {
                 array[nums[i]-1]++;
             }
         }
-        for(int x : array)
-        System.out.println(x);
+        
         for(int i=0;i<array.length;i++){
             if(array[i]==0)
                 return i+1;
