@@ -5,20 +5,10 @@ class Solution {
             if(nums[i]>nums[i+1]){
                 if(changed)
                     return false;
-               if(i==0){ 
-                       changed = true;
-               }
-                else{
-                    if(nums[i-1]>nums[i+1] )
-                        nums[i+1]=nums[i];
+               if(i!=0&& nums[i-1]>nums[i+1] ) 
+                    nums[i+1]=nums[i];
                 
-                    changed=true;
-                        
-                }
-                    
-                
-                   
-                       
+               changed=true;             
             }
                  
         return true;
