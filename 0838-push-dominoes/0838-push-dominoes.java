@@ -1,30 +1,41 @@
 class Solution {
-    public String pushDominoes(String S) {
-        char[] A = S.toCharArray();
-        int N = A.length;
-        int[] forces = new int[N];
-
-        // Populate forces going from left to right
-        int force = 0;
-        for (int i = 0; i < N; ++i) {
-            if (A[i] == 'R') force = N;
-            else if (A[i] == 'L') force = 0;
-            else force = Math.max(force - 1, 0);
-            forces[i] += force;
+    public String pushDominoes(String dominoes) {
+       int[] force= new int[dominoes.length()]; 
+        for(int i=0;i<dominoes.length();){
+            
+            if(dominoes.charAt(i)=='R'){
+                force[i]=1;
+                i++;
+                int maxForce = dominoes.length()-1;
+                while(i<dominoes.length()&&dominoes.charAt(i)=='.'){
+                    force[i]+=maxForce;
+                    maxForce--;
+                    i++;
+                }      
+            }
+            else i++;
+            
         }
-
-        // Populate forces going from right to left
-        force = 0;
-        for (int i = N-1; i >= 0; --i) {
-            if (A[i] == 'L') force = N;
-            else if (A[i] == 'R') force = 0;
-            else force = Math.max(force - 1, 0);
-            forces[i] -= force;
+        
+        for(int i=dominoes.length()-1;i>=0;){
+            if(dominoes.charAt(i)=='L'){
+                force[i]=-1;
+                i--;
+                int maxForce = dominoes.length()-1;
+                while(i>=0&& dominoes.charAt(i)=='.'){
+                    force[i]-=maxForce;
+                    maxForce--;
+                    i--;
+                }
+                    
+            }
+            else i--;
+            
         }
-
         StringBuilder ans = new StringBuilder();
-        for (int f: forces)
+        for (int f: force)
             ans.append(f > 0 ? 'R' : f < 0 ? 'L' : '.');
         return ans.toString();
+    
     }
 }
