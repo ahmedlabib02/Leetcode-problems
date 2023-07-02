@@ -11,7 +11,7 @@ class Solution {
            }
             
         for(int x=0;x<count&&x<2;x++)
-            nums[i++]= nums[j-1]; 
+            nums[i++]= temp; 
         
         }
         return i;
