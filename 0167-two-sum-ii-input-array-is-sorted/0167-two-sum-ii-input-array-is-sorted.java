@@ -10,9 +10,7 @@ class Solution {
             else
                 break;
         }
-        int[] res= new int[2];
-        res[0]= i+1;
-        res[1]= j+1;
-        return res;
+        
+        return new int[] { i + 1, j + 1 };
     }
 }
