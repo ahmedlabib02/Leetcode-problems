@@ -11,7 +11,6 @@ class Solution {
         
         while(j<height.length-1){
             int index= j;
-            System.out.print(i+" ");
             while(j<height.length){
                 if(height[j]>=height[index])
                     index=j;
@@ -22,16 +21,12 @@ class Solution {
                 
             
                 
-                System.out.print(index);
+        
                 int temp = Math.min(height[i++],height[index]);
-                System.out.println(" -->"+temp);
-                
                 while(i<index)
                     res+= temp-height[i++];
                 i=index;
                 j=i+1;
-            
-
             
         }
         return res;
