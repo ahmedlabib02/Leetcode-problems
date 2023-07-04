@@ -16,7 +16,7 @@ class Solution {
                prefix-=nums[j];
                j++; 
            }  
-            System.out.print(prefix+" ");
+
         }
         return ans;
     }
