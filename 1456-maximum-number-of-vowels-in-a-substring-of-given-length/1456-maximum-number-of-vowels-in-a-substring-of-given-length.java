@@ -18,7 +18,6 @@ class Solution {
             return k;
         j=i+k-1;
         while(j<s.length()){
-            System.out.print(s.charAt(i)+"--"+s.charAt(j)+" ");
             if(isVowel(s.charAt(i)))
                 count--;
             i++;
