@@ -4,8 +4,6 @@ class Solution {
         int ans=nums.length+1;
         int sum=nums[0];
         
-        if(nums[0]>=target)
-            return 1;
         
         for(int j=0;j<nums.length;){
             if(sum<target){
