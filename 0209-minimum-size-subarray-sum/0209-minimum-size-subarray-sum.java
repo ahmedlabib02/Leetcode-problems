@@ -8,7 +8,6 @@ class Solution {
             return 1;
         
         for(int j=0;j<nums.length;){
-            System.out.println(nums[i]+" "+nums[j]);
             if(sum<target){
                 j++; 
                 if(j<nums.length)
