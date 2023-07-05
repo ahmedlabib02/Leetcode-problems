@@ -28,7 +28,6 @@ class Solution {
         j--;
         int p = 0;
         while(j<nums.length){
-            System.out.println(i+" "+j);
             res[p]= nums[maxIndex];
             if(j!=nums.length-1 && nums[j+1]>=nums[maxIndex])
                 maxIndex=j+1;
