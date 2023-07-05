@@ -8,8 +8,7 @@ class Solution {
             map.put(t.charAt(i),map.getOrDefault(t.charAt(i),0)+1);
         
         int i=0;
-        while(i<s.length()&& map.get(s.charAt(i))==null)  // "ADOBECODEBANC"
-            i++;
+       
         StringBuilder ans = new StringBuilder(s);
         ans.append("0");
         int j =i;
@@ -17,7 +16,6 @@ class Solution {
         while(j<s.length()){
             
             if(hasAll){
-                // System.out.println(s.substring(i,j));
                 ans = ((j-i)<ans.length())?(new StringBuilder(s.substring(i,j+1))):(ans);
                 if(map.get(s.charAt(i))!=null){
                     map.put(s.charAt(i),map.get(s.charAt(i))+1);
