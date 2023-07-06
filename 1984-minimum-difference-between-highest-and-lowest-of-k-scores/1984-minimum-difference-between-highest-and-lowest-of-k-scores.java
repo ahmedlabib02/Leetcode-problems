@@ -7,7 +7,6 @@ class Solution {
         int j=i+k-1;
         int ans = 0;
         while(j<nums.length){
-            System.out.println(i+" "+j);
             if(nums[j]-nums[i]<min)
                 min = nums[j]-nums[i];
                 
