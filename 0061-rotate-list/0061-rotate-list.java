@@ -26,8 +26,6 @@ class Solution {
             newHead = newHead.next;
             dummy = dummy.next;
         }
-        System.out.print(newHead.val);
-
         ListNode temp = newHead;
         if(newHead.next == null)
             newHead = head;
