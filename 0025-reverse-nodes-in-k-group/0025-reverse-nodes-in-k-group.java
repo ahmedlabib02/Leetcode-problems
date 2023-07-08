@@ -28,7 +28,7 @@ class Solution {
                 }  
                 border = border.next;
             }
-            System.out.println(border.val);
+            // System.out.println(border.val);
             if(x!=null)
                 x.next = border;
             border=border.next;
