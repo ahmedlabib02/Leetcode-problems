@@ -15,7 +15,6 @@ class Solution {
         Queue<Integer> q = new LinkedList<>();
         while(second!=null)
         {  
-            // System.out.println(first.val+" "+second.val);
             if(first.val>=x&&(second.val>=x))
             {   
                 
