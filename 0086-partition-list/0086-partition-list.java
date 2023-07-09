@@ -39,7 +39,6 @@ class Solution {
             ListNode dummy = head;
             
         }
-        System.out.print(q);
         while(first!=null)
         {
             first.val = q.poll();
