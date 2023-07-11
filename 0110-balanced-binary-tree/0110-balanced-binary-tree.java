@@ -21,8 +21,6 @@ class Solution {
         int left = helper(root.left);
         int right = helper(root.right);
         int abs = left-right;
-        if(root.val==3)
-            System.out.print(left+" "+right);
         if(Math.abs(abs)>1)
             return false;
         boolean leftSub = isBalanced(root.left);
