@@ -20,7 +20,7 @@ class Solution {
         helper(root,"");
         int ans=0;
         for(String s: list)
-        {   System.out.println(s);
+        {   
             ans+= Integer.parseInt(s);
         }
         return ans;
