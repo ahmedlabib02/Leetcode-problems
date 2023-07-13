@@ -14,15 +14,11 @@
  * }
  */
 class Solution {
-    ArrayList<String> list;
+    
+    int ans;
     public int sumNumbers(TreeNode root) {
-        list = new ArrayList<>();
+        
         helper(root,"");
-        int ans=0;
-        for(String s: list)
-        {   
-            ans+= Integer.parseInt(s);
-        }
         return ans;
     }
     public void helper(TreeNode root, String s){
@@ -32,7 +28,7 @@ class Solution {
             return;
         }
         if(root.left==null&root.right==null)
-            list.add(s+root.val);
+            ans+=Integer.parseInt(s+root.val);
         
             
             
