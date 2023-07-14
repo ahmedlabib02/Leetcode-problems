@@ -29,7 +29,6 @@ class Solution {
                 
                    
                 TreeNode node = q.remove();
-                System.out.println(node.val+" "+val);
                 if(node.val-val!=1)
                     return false;
                 val = node.val; 
