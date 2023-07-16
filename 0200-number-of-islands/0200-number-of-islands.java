@@ -12,8 +12,7 @@ class Solution {
                 }
                     
             }
-            if(i==1)
-                printMap();
+
         }
         return ans;
     }
@@ -33,14 +32,8 @@ class Solution {
         }
     }
     
-    public void printMap(){
-        for(int i=0;i<temp.length;i++){
-            for(int j=0;j<temp[i].length;j++){
-                System.out.print(temp[i][j]+" ");
-            }
-            System.out.println();
-        }
+   
             
         
-    }
+    
 }
