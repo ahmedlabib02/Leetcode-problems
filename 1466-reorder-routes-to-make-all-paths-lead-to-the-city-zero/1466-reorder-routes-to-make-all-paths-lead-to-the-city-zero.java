@@ -22,8 +22,6 @@ class Solution {
         
         dfs(0);
         
-        System.out.println(map);
-        System.out.println(map2);
         return ans;
     }
     
