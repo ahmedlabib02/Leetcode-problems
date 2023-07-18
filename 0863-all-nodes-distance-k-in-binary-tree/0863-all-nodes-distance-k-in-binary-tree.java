@@ -21,7 +21,6 @@ class Solution {
         map = new HashMap<>();
         dfs(root);
         Queue<state> q = new LinkedList<>();
-        System.out.print(map);
         q.add(new state(target,0));
         ArrayList<Integer> ans =new ArrayList<Integer>();
         HashSet<TreeNode> seen = new HashSet<>();
