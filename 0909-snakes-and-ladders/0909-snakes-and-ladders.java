@@ -27,7 +27,6 @@ class Solution {
                     map.put(counter++,new Pair<Integer,Integer>(i,j));
             }
         }
-        System.out.print(map);
         while(!q.isEmpty())
         {
             state s = q.remove();
