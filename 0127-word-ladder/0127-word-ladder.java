@@ -13,15 +13,13 @@ class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         map = new HashMap<>();
         map.put(beginWord, new ArrayList<>());
-        for(String s : wordList)
-        {
-            if(oneStep(beginWord,s))
-            {
-                map.get(beginWord).add(s);
-            }
-        }
+        
         for(int i=0;i<wordList.size();i++)
         {
+            if(oneStep(beginWord,wordList.get(i)))
+            {
+                map.get(beginWord).add(wordList.get(i));
+            }
             if(map.get(wordList.get(i))==null)
                 map.put(wordList.get(i), new ArrayList<>());
             for(int j=i+1;j< wordList.size();j++)
