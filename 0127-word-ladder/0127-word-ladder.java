@@ -45,6 +45,8 @@ class Solution {
                 return s.step;
             for(String word : map.get(w))
             {
+                if(word.equals(endWord))
+                    return s.step+1;
                 if(!seen.contains(word))
                 {
                     seen.add(word);
