@@ -35,7 +35,6 @@ class Solution {
                 }
             }
         }
-        System.out.println(map);
         Queue<state> q = new LinkedList<>();
         q.add(new state(beginWord,1));
         HashSet<String> seen= new HashSet<>();
