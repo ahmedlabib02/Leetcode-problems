@@ -18,8 +18,6 @@ class Solution {
         int step=0;
         while(!q.isEmpty())
         {
-            System.out.print(q);
-            System.out.println(fresh);
             step++;
             int size = q.size();
             for(int x=0;x<size;x++)
