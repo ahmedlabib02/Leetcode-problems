@@ -8,7 +8,7 @@ class Solution {
 
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
-                if (board[i][j] == word.charAt(0) && backtrack(i, j, word, "", new HashSet<>())) {
+                if (board[i][j] == word.charAt(0) && backtrack(i, j, word, "")) {
                     return true;
                 }
             }
@@ -16,7 +16,7 @@ class Solution {
         return false;
     }
 
-    public boolean backtrack(int i, int j, String word, String s, HashSet<String> visited) {
+    public boolean backtrack(int i, int j, String word, String s) {
         String position = i + "," + j;
         if (s.length() == word.length() && !s.equals(word)) {
             return false;
@@ -36,10 +36,10 @@ class Solution {
         if (grid[i][j] == word.charAt(s.length())) {
             String s2 = s+grid[i][j];
             grid[i][j]+=100;
-            right = backtrack(i, j + 1, word, s2, visited);
-            down = backtrack(i + 1, j, word, s2, visited);
-            left = backtrack(i, j - 1, word, s2, visited);
-            up = backtrack(i - 1, j, word, s2, visited);
+            right = backtrack(i, j + 1, word, s2 );
+            down = backtrack(i + 1, j, word, s2);
+            left = backtrack(i, j - 1, word, s2);
+            up = backtrack(i - 1, j, word, s2);
             grid[i][j]-=100; 
         }
 
