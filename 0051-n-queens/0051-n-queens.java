@@ -19,7 +19,6 @@ class Solution {
         StringBuilder s= new StringBuilder();
         for(int i=0;i<n;i++)
             s.append('.');
-        System.out.println(curr);
         for(int i=0; i<n; i++)
         {
             if(ver.contains(i) || dia.contains(hor-i) || anti.contains(hor+i))
