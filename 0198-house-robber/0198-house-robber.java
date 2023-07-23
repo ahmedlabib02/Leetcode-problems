@@ -6,7 +6,7 @@ class Solution {
         if(nums.length==1)
             return nums[0];
         
-        return Math.max(dp(nums.length-1,nums), dp(nums.length-2,nums));
+        return dp(nums.length-1,nums);
     }
     public int dp(int i, int[] nums)
     {
