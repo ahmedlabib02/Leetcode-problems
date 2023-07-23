@@ -22,7 +22,6 @@ class Solution {
         
          for(int i=0;i<numCourses;i++)   
          {
-             System.out.println(q);
              if(q.isEmpty())
                  return false;
              int num = q.remove();
