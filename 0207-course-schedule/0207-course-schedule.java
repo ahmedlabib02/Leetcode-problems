@@ -1,11 +1,9 @@
 class Solution {
     
-    boolean[] seen;
-    HashMap<Integer, ArrayList<Integer>> map;
-    
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         int[] inDegree = new int[numCourses];
-        map = new HashMap<>();
+        HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
+        
         for(int[] edge : prerequisites)
         {
             int x = edge[0];
@@ -30,8 +28,7 @@ class Solution {
                  inDegree[x]--;
                  if(inDegree[x]==0)
                      q.add(x);
-             }
-             
+             }  
          }
         return true;
     }
