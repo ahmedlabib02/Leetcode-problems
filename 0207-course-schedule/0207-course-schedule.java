@@ -1,39 +1,41 @@
 class Solution {
+    
+    boolean[] seen;
+    HashMap<Integer, ArrayList<Integer>> map;
+    
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        int[] indegree = new int[numCourses];
-        List<List<Integer>> adj = new ArrayList<>(numCourses);
-
-        for (int i = 0; i < numCourses; i++) {
-            adj.add(new ArrayList<>());
+        int[] inDegree = new int[numCourses];
+        map = new HashMap<>();
+        for(int[] edge : prerequisites)
+        {
+            int x = edge[0];
+            int y= edge[1];
+            if(map.get(x)==null )
+                map.put(x,new ArrayList<>());
+            map.get(x).add(y); 
+            inDegree[y]++;
         }
-
-        for (int[] prerequisite : prerequisites) {
-            adj.get(prerequisite[1]).add(prerequisite[0]);
-            indegree[prerequisite[0]]++;
-        }
-
-        Queue<Integer> queue = new LinkedList<>();
-        // Push all the nodes with indegree zero in the queue.
-        for (int i = 0; i < numCourses; i++) {
-            if (indegree[i] == 0) {
-                queue.offer(i);
-            }
-        }
-
-        int nodesVisited = 0;
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            nodesVisited++;
-
-            for (int neighbor : adj.get(node)) {
-                // Delete the edge "node -> neighbor".
-                indegree[neighbor]--;
-                if (indegree[neighbor] == 0) {
-                    queue.offer(neighbor);
-                }
-            }
-        }
-
-        return nodesVisited == numCourses;
+        Queue<Integer> q = new LinkedList<>();
+        for(int i=0;i<inDegree.length;i++)
+            if(inDegree[i]==0)
+                q.add(i);
+        
+         for(int i=0;i<numCourses;i++)   
+         {
+             if(q.isEmpty())
+                 return false;
+             int num = q.remove();
+             for(int x : map.getOrDefault(num,new ArrayList<>()))
+             {
+                 inDegree[x]--;
+                 if(inDegree[x]==0)
+                     q.add(x);
+             }
+             
+         }
+        return true;
     }
+    
+    
+    
 }
