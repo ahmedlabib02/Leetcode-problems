@@ -3,9 +3,6 @@ class Solution {
     public int rob(int[] nums) {
         memo = new int[nums.length];
         Arrays.fill(memo,-1);
-        if(nums.length==1)
-            return nums[0];
-        
         return dp(nums.length-1,nums);
     }
     public int dp(int i, int[] nums)
