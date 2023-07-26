@@ -1,35 +1,38 @@
 class Solution {
-    int[][][]memo;
-    int k;
-    int[] arr;
+    int n;
+    int[][][] memo;
+    int[] prices;
+    
     public int maxProfit(int k, int[] prices) {
-        memo= new int[prices.length][k][2];
-        for(int[][] x: memo)
-            for(int []arr :x)
-            Arrays.fill(arr,-1);
-        this.k=k;
-        arr=prices;
-        return dp(0,0,0);
-    }
-    public int dp(int i, int taken,int round )
-    {
-        if(round==k|| i==arr.length )
-            return 0;
+        n = prices.length;
+        memo = new int[n][2][k + 1];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < 2; j++) {
+                Arrays.fill(memo[i][j], -1);
+            }
+        }
         
-        if(memo[i][round][taken]!=-1)
-            return memo[i][round][taken];
-        int skip = dp(i+1,taken,round);
-        if(taken==0)
-        {
-            int buy = -arr[i]+dp(i+1, 1, round);
-            memo[i][round][taken]= Math.max(skip,buy);
+        this.prices = prices;
+        return dp(0, 0, k);
+    }
+    
+    public int dp(int i, int holding, int remain) {
+        if (i == n || remain == 0) {
+            return 0;
         }
-            
-        else 
-        {
-            int sell = arr[i]+dp(i+1,0,round+1);
-            memo[i][round][taken]= Math.max(skip,sell);
+        
+        if (memo[i][holding][remain] != -1) {
+            return memo[i][holding][remain];
         }
-        return memo[i][round][taken];
+        
+        int ans = dp(i + 1, holding, remain);
+        if (holding == 1) {
+            ans = Math.max(ans, prices[i] + dp(i + 1, 0, remain - 1));
+        } else {
+            ans = Math.max(ans, -prices[i] + dp(i + 1, 1, remain));
+        }
+        
+        memo[i][holding][remain] = ans;
+        return ans;
     }
 }
