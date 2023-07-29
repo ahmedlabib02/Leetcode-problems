@@ -12,7 +12,6 @@ class Solution {
                 count.put(map.get(num),new ArrayList<>());
             count.get(map.get(num)).add(num);
         }
-        System.out.print(count);
         int ans = map.keySet().size();
         System.out.print(ans);
         for(int i=1;i<=k;i++)
