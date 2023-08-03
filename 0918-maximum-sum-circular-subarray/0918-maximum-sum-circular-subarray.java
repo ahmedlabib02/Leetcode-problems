@@ -19,7 +19,7 @@ class Solution {
             max= Math.max(max,total2);
             ans = Math.min(total,ans);
         }
-        System.out.print(ans);
+        
         if(sum==ans)
             return max;
         return Math.max(sum-ans,max);
