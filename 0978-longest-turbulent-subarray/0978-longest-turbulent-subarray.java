@@ -10,7 +10,6 @@ class Solution {
         int count = 1;
 
         while (i < arr.length - 1) {
-            System.out.println(count+" "+asc+" "+arr[i]);
             if(arr[i] < arr[i + 1]) 
             {
                 if (asc) 
