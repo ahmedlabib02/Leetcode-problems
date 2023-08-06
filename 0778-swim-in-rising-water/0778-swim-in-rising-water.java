@@ -1,72 +1,46 @@
+// Solution: Greedy Approach with Min Heap
+// Time Complexity: O((n^2)*log(n))
 class Solution {
-    int n;
-    int m;
-    int directions[][] = new int[][]{{1,0},{0,1},{-1,0},{0,-1}};
+
+    private int[][] dirs = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };
+
     public int swimInWater(int[][] grid) {
-        n= grid.length;
-        m= grid[0].length;
-        int[][] time = new int[n][m];
-        for(int[] x :time)
-            Arrays.fill(x, Integer.MAX_VALUE);
-        time[0][0]= grid[0][0];
-        Queue<Cell> q  = new LinkedList<>();
-        q.add(new Cell(0,0,grid[0][0]));
-        while(!q.isEmpty())
-        {
-            
-            Cell curr= q.remove();
-            int x= curr.x;
-            int y = curr.y;
-            int weight = curr.time;
-            for(int[] step: directions)
-            {
-                int xx = x+ step[0];
-                int yy= y+ step[1];
-                if(valid(xx,yy))
-                {
-                    int elev= grid[xx][yy];
-                    int currTime = Math.max(elev,weight);
-                    if(currTime<time[xx][yy])
-                    {
-                        time[xx][yy]= currTime;
-                        q.add(new Cell(xx,yy,currTime));
-                    }
+        int len = grid.length;
+
+        if (len == 1) {
+            return 0;
+        }
+
+        var seen = new boolean[len][len];
+        seen[0][0] = true;
+
+        var minHeap = new PriorityQueue<Integer[]>((a, b) -> a[0] - b[0]);
+        minHeap.add(new Integer[] { grid[0][0], 0, 0 });
+
+        int result = 0;
+
+        while (!minHeap.isEmpty()) {
+            var curr = minHeap.poll();
+
+            result = Math.max(result, curr[0]);
+
+            if (curr[1] == len - 1 && curr[2] == len - 1) {
+                break;
+            }
+
+            for (int i = 0; i < 4; i++) {
+                int x = curr[1] + dirs[i][0];
+                int y = curr[2] + dirs[i][1];
+
+                if (x < 0 || x >= len || y < 0 || y >= len || seen[x][y]) {
+                    continue;
                 }
+
+                minHeap.add(new Integer[] { grid[x][y], x, y });
+                seen[x][y] = true;
             }
         }
-        // print(time);
-         return time[n-1][m-1];  
-    }
-    public void print(int[][] arr)
-    {
-        for(int[] x: arr)
-        {
-            for(int num:x)
-                System.out.print(num+" ");
-            System.out.println();
-        }
-    }
-    
-    public boolean valid(int x,int y)
-    {
-        if(x>=n || y>=m || x<0 || y<0)
-            return false;
-        return true;
-    }
-    
-}
-public class Cell 
-{
-    int x;
-    int y;
-    int time;
-    public Cell(int x, int y, int time)
-    {
-        this.x=x;
-        this.y=y;
-        this.time=time;
-    }
-     public String toString() {
-        return "Cell: (" + x + ", " + y + "), time: " + time;
+
+        return result;
     }
 }
