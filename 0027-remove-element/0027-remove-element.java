@@ -1,25 +1,12 @@
-class Solution {
+public class Solution{
     public int removeElement(int[] nums, int val) {
-       PriorityQueue<Integer> q = new PriorityQueue<>();
-       int count = 0; 
-       for(int i=0;i<nums.length;i++)
-       {
-           if(nums[i]==val)
-           {
-               q.add(i);
-               count++;
-           }
-               
-           else if(nums[i]!=val && !q.isEmpty())
-           {
-               int index= q.poll();
-               q.add(i);
-               int temp = nums[index];
-               nums[index]= nums[i];
-               nums[i]= temp;
-           }
-       }
-       
-       return nums.length-count;  
+    int i = 0;
+    for (int j = 0; j < nums.length; j++) {
+        if (nums[j] != val) {
+            nums[i] = nums[j];
+            i++;
+        }
     }
+    return i;
+}
 }
