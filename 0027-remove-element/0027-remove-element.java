@@ -19,8 +19,7 @@ class Solution {
                nums[i]= temp;
            }
        }
-       for(int num: nums)
-           System.out.print(num+" ");
+       
        return nums.length-count;  
     }
 }
