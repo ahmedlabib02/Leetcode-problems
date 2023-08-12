@@ -13,9 +13,11 @@ class Solution {
             else if(arr[i]==1)
                 i+=2;
             else i++;
+            if(count>=n)
+                return true;
         }
             
             
-        return count>=n?true:false;
+        return false;
     }
 }
