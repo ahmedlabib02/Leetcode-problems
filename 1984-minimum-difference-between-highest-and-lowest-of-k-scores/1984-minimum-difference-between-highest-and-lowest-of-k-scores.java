@@ -12,7 +12,7 @@ class Solution {
                 
             
             i++;
-            j++; //1 4 7 9
+            j++; 
         }
         return min;
     }
