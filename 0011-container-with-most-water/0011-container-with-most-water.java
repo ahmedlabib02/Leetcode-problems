@@ -11,13 +11,9 @@ class Solution {
             ans= Math.max(ans,num);
             if(x<y)
                 i++;
-            else if(x>y)
-                j--;
             else 
-            {
-                i++;
                 j--;
-            }
+            
                 
             
         }
