@@ -6,7 +6,7 @@ class Solution {
             return nums[0];
         while(i<j)
         {
-            System.out.println(i+" "+j);
+            
             int mid = i+(j-i)/2;
              
             if(nums[mid]==nums[mid+1])
