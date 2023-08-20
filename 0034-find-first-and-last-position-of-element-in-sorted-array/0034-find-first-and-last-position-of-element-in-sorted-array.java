@@ -37,7 +37,6 @@ class Solution {
                 i=mid+1;
         }
         int start = j;
-        System.out.print(i+" "+j);
         if(i>=nums.length||j<0||nums.length==0||nums[start]!=target || nums[end]!=target)
             return new int[]{-1,-1};
         return new int[]{start,end};
