@@ -5,7 +5,6 @@ class Solution {
         int j = nums.length-1;
         while(i<j)
         {
-            System.out.println(i+" "+j);
             int mid = i+(j-i)/2;
             if(nums[mid]==target && (mid==nums.length-1||nums[mid+1]!=target))
             {
