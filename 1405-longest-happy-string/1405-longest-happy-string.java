@@ -12,7 +12,6 @@ class Solution {
         pq.add(pc);
         StringBuilder sb= new StringBuilder();
         Pair<Character,Integer> prev = null;
-        System.out.print(pq);
         while(!pq.isEmpty())
         {
             
