@@ -57,12 +57,6 @@ class Solution {
        return ans; 
     }
     
-    public static void printPriorityQueue(PriorityQueue<int[]> pq) {
-        PriorityQueue<int[]> copy = new PriorityQueue<>(pq);
-        System.out.println("Contents of the PriorityQueue:");
-        while (!copy.isEmpty()) {
-            int[] pair = copy.poll();
-            System.out.println("[" + pair[0] + ", " + pair[1] + "]");
-        }
-    }
+    
 }
+
