@@ -15,7 +15,8 @@ class Solution {
                 l--;
                 i++;
             }
-            else{
+            else
+            {
                 l++;
                 set.add(s.charAt(j));
                 j++;
