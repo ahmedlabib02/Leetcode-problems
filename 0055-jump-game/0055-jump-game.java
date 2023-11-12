@@ -1,7 +1,5 @@
 class Solution {
-    Boolean[] memo;
-    int[] arr;
-
+    
     public boolean canJump(int[] nums) {
         int max=0;
         int n = nums.length-1;
