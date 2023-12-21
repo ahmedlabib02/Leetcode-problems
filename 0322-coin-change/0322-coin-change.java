@@ -1,38 +1,26 @@
 class Solution {
-    int[] coins;
-    HashMap<Integer,Integer> memo;
     public int coinChange(int[] coins, int amount) {
-        this.coins = coins;
-        memo = new HashMap<>();
-        if(amount==0)
-            return 0;
-        for(int coin : coins)
-            memo.put(coin,1); 
-        return dp(amount);
-    }
-    public int dp(int amount)
-    {   
-        if(amount<0)
-            return -1;
-        if(memo.get(amount)!=null)
-            return memo.get(amount);
-        
-        int min = Integer.MAX_VALUE;
-        boolean flag=false;
-        for(int i=0;i<coins.length;i++)
+        int[] dp = new int[amount+1];
+        Arrays.fill(dp,-1);
+        dp[0]=0;
+        for(int i=1;i<=amount;i++)
         {
-            int temp = 1+dp(amount-coins[i]);
-            if(temp!=0)
+            int min =Integer.MAX_VALUE;
+            for(int coin: coins)
             {
-                flag=true;
-                min = Math.min(temp,min);
-            } 
+                if(i-coin>=0 && dp[i-coin]!=-1)
+                min = Math.min(dp[i-coin]+1, min);
+            }
+            if(min!=Integer.MAX_VALUE)
+            dp[i]=min;
         }
-        if(!flag)
-            min=-1;
-        
-        memo.put(amount, min);
-        return memo.get(amount);
+        printArray(dp);
+        return dp[amount];
     }
     
+    public void printArray(int[] arr)
+    {
+        for(int num: arr)
+            System.out.print(num+" ");
+    }
 }
