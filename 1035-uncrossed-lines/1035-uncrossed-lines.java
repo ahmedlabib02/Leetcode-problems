@@ -17,8 +17,7 @@ class Solution {
             return memo[i][j];
         if(nums1[i]==nums2[j])
         {
-            int temp = Math.max(dp(i,j+1), dp(i+1,j ) );
-            memo[i][j] = Math.max(1+dp(i+1,j+1), temp);
+            memo[i][j] = 1+dp(i+1,j+1);
         }
         else 
         {
