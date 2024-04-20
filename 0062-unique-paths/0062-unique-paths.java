@@ -26,19 +26,5 @@ class Solution {
             
         return memo[m-1][n-1];
     }
-    public int dp(int i,int j)
-    {
-        if(i==m-1&&j==n-1)
-            return 1;
-        if(memo[i][j]!=-1)
-            return memo[i][j];
-        int down=0;
-        if(i!=m-1)
-           down = dp(i+1,j);
-        int right =0;
-        if(j!=n-1)
-            right= dp(i,j+1);
-        memo[i][j]= down+right;
-        return memo[i][j];
-    }
+    
 }
