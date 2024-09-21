@@ -23,7 +23,7 @@ class Solution {
             length=length+ inputs[i].length() - (int) pair[1];
             if(ans<length && inputs[i].contains(".") )
             {
-                printStack(stack);
+                // printStack(stack);
                 ans = length;
             }
         }
