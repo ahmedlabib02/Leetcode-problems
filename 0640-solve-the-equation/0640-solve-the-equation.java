@@ -44,7 +44,7 @@ class Solution {
             }
             i++;
         }
-        System.out.println(coe+" "+sum);
+        // System.out.println(coe+" "+sum);
         if(coe==0&& sum!=0)
             return "No solution";
         if(coe==0)
