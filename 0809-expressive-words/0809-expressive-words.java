@@ -38,9 +38,9 @@ class Solution {
                 
                 indicies[j]= start;
             }
-            for(int v=0;v<indicies.length;v++)
-                System.out.print(indicies[v]+" ");
-            System.out.println();
+            // for(int v=0;v<indicies.length;v++)
+            //     System.out.print(indicies[v]+" ");
+            // System.out.println();
             
         }
         int ans=0;
