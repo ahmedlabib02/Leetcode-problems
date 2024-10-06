@@ -1,24 +1,29 @@
 class Solution {
     public boolean validateStackSequences(int[] pushed, int[] popped) {
-        Stack<Integer> s = new Stack<>();
-        int i=0;
+        // HashSet<Integer> set= new HashSet<>();
+        Stack<Integer> stack = new Stack<>();
         int j=0;
-        while(i<pushed.length || j<popped.length)
+        int i=1;
+        stack.push(pushed[0]);
+        // set.add(pushed[0]);
+        while(!stack.isEmpty())
         {
-            
-            if(!s.isEmpty()&&s.peek()==popped[j])
+            if(i>=pushed.length && popped[j]!=stack.peek())
+                break;
+            //popped[j]== peek then we need to pop now before pushing anything else
+            while(!stack.isEmpty() && popped[j]==stack.peek())
             {
-                s.pop();
+                stack.pop();
                 j++;
             }
-            else if(i!=pushed.length)
-            {
-                s.push(pushed[i]);
-                i++;
-            }
-            else 
-                return false;
+            if(i<pushed.length)
+                stack.push(pushed[i]);
+            
+                
+            // System.out.println(stack);
+            i++;
+
         }
-        return true;
+        return (j==popped.length);
     }
 }
