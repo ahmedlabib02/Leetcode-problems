@@ -1,27 +1,12 @@
 class Solution {
-    public int getMaximumConsecutive(int[] arr) {
-        Arrays.sort(arr);
-        int i=-1;
-        int min=0;
-        int curr = 0;
-        int ans=-1;
-        for(int j=0;j<arr.length;j++)
-        {
-            min = i==-1?0:arr[i];
-            int lower = arr[j];
-            int upper = arr[j]+curr;
-            if(curr+1>=lower && curr+1<=upper )
-            {
-                curr=upper;
-            }
-            else
-            {
-                ans= Math.max(ans, curr-min+1);
-                i=j;
-                curr = min;
-            }
+    public int getMaximumConsecutive(int[] coins) {
+        Arrays.sort(coins);
+        long reach = 0;                    // we can make all sums in [1..reach]
+        for (int x : coins) {
+            if (x > reach + 1) 
+                break;      // gap at reach+1
+            reach += x;                    // extend coverage
         }
-        ans= Math.max(ans, curr - min +1);
-        return ans;
+        return (int)(reach + 1);
     }
 }
