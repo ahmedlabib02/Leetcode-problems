@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0670-maximum-swap](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0670-maximum-swap) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1930-maximum-number-of-consecutive-values-you-can-make](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1930-maximum-number-of-consecutive-values-you-can-make) |
 ## Matrix
@@ -19,4 +20,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1930-maximum-number-of-consecutive-values-you-can-make](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1930-maximum-number-of-consecutive-values-you-can-make) |
+## Math
+|  |
+| ------- |
+| [0670-maximum-swap](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0670-maximum-swap) |
 <!---LeetCode Topics End-->
