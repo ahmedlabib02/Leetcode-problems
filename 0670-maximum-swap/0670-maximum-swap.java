@@ -17,7 +17,7 @@ class Solution {
 
         ArrayList<Integer> arr2 =new ArrayList<>(arr);
         arr2.sort(Comparator.reverseOrder());
-        System.out.println(arr +" "+ arr2 );
+        
         for(int j=0;j<arr.size();j++)
         {
             if(arr2.get(j) != arr.get(j))
