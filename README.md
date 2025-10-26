@@ -5,12 +5,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [1930-maximum-number-of-consecutive-values-you-can-make](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1930-maximum-number-of-consecutive-values-you-can-make) |
 ## Greedy
 |  |
 | ------- |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [1930-maximum-number-of-consecutive-values-you-can-make](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1930-maximum-number-of-consecutive-values-you-can-make) |
 ## Matrix
 |  |
 | ------- |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+## Sorting
+|  |
+| ------- |
+| [1930-maximum-number-of-consecutive-values-you-can-make](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1930-maximum-number-of-consecutive-values-you-can-make) |
 <!---LeetCode Topics End-->
