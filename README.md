@@ -84,9 +84,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0481-magical-string](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0481-magical-string) |
 | [0875-longest-mountain-in-array](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0875-longest-mountain-in-array) |
 ## Enumeration
 |  |
 | ------- |
 | [0875-longest-mountain-in-array](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0875-longest-mountain-in-array) |
+## String
+|  |
+| ------- |
+| [0481-magical-string](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0481-magical-string) |
 <!---LeetCode Topics End-->
