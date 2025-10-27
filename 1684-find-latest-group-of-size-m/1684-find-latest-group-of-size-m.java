@@ -2,7 +2,7 @@ class Solution {
    public int findLatestStep(int[] arr, int m) {
         if(m==arr.length)
             return m;
-        HashMap<Integer, int[]> map = new HashMap<>();
+        HashMap<Integer, int[]> map = new HashMap<>(arr.length);
         int ans =-1;
         for(int i=0;i<arr.length;i++)
         {
