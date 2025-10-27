@@ -17,7 +17,7 @@ class Solution {
                 minSuffix[i] = digit;
             }
         }
-        System.out.println(Arrays.toString(minSuffix));
+        // System.out.println(Arrays.toString(minSuffix));
         int num =0;
         for(int i=0;i<s.length();i++)
         {
