@@ -14,7 +14,7 @@ class MyCalendarTwo {
             bookings.add(new Booking(startTime, endTime, 1));
             return true;
         }
-//        int smallestCommonBooking = binarySearch(startTime, endTime);
+       int smallestCommonBooking = binarySearch(startTime, endTime);
 
 
         //make deep copy
@@ -23,7 +23,7 @@ class MyCalendarTwo {
         {
             backup.add(new Booking(b.start, b.end, b.count));
         }
-        for(int i=0;i<bookings.size();i++)
+        for(int i=smallestCommonBooking;i<bookings.size();i++)
         {
             Booking currBooking=bookings.get(i);
             if(bookings.get(i).end<=startTime) // no intersection
