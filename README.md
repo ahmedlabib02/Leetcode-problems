@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0731-my-calendar-ii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0731-my-calendar-ii) |
 | [1684-find-latest-group-of-size-m](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1684-find-latest-group-of-size-m) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
+| [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
 | [1930-maximum-number-of-consecutive-values-you-can-make](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1930-maximum-number-of-consecutive-values-you-can-make) |
 ## Greedy
 |  |
@@ -26,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0670-maximum-swap](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0670-maximum-swap) |
+| [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
 ## Hash Table
 |  |
 | ------- |
@@ -55,4 +57,24 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0731-my-calendar-ii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0731-my-calendar-ii) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
+## Backtracking
+|  |
+| ------- |
+| [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
+## Bit Manipulation
+|  |
+| ------- |
+| [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
+## Number Theory
+|  |
+| ------- |
+| [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
+## Bitmask
+|  |
+| ------- |
+| [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
 <!---LeetCode Topics End-->
