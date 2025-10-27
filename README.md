@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0731-my-calendar-ii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0731-my-calendar-ii) |
+| [0875-longest-mountain-in-array](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0875-longest-mountain-in-array) |
 | [1684-find-latest-group-of-size-m](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1684-find-latest-group-of-size-m) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
@@ -60,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0875-longest-mountain-in-array](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0875-longest-mountain-in-array) |
 | [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
 ## Backtracking
 |  |
@@ -77,4 +79,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
+## Two Pointers
+|  |
+| ------- |
+| [0875-longest-mountain-in-array](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0875-longest-mountain-in-array) |
+## Enumeration
+|  |
+| ------- |
+| [0875-longest-mountain-in-array](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0875-longest-mountain-in-array) |
 <!---LeetCode Topics End-->
