@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0670-maximum-swap](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0670-maximum-swap) |
+| [0738-monotone-increasing-digits](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0738-monotone-increasing-digits) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1930-maximum-number-of-consecutive-values-you-can-make](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1930-maximum-number-of-consecutive-values-you-can-make) |
 ## Matrix
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0670-maximum-swap](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0670-maximum-swap) |
+| [0738-monotone-increasing-digits](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0738-monotone-increasing-digits) |
 | [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
 ## Hash Table
 |  |
