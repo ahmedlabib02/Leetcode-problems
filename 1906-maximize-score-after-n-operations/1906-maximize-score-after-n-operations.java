@@ -16,11 +16,8 @@ class Solution {
         {
 
             HashSet<Integer> curr = new HashSet<>();
-            while(!prev.isEmpty())
+            for(int state: prev)
             {
-
-                int state =prev.iterator().next();
-                prev.remove(state);
                 for(int i=0;i<nums.length;i++)
                 {
                     int bit = (state>>i)&1;
@@ -48,7 +45,6 @@ class Solution {
         }
         return dp[0];
     }
-
     private int gcd(int i, int j)
     {
         if(i<j)
