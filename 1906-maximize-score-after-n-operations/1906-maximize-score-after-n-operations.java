@@ -7,17 +7,14 @@ class Solution {
         for(int i=0;i<nums.length;i++)
             for(int j=i+1;j<nums.length;j++)
                 gcd[i][j] = gcd(nums[i], nums[j]);
-
-
-        Set<Integer> prev = new HashSet<>();
-        prev.add(dp.length-1);
-        int counter =1;
-        for(int round = 1;round<=nums.length/2;round++)
-        {
-
-            HashSet<Integer> curr = new HashSet<>();
-            for(int state: prev)
+        
+            for(int state= dp.length-1; state>=0; state--)
             {
+                int noBits = Integer.bitCount(state);
+                if(noBits%2==1)
+                    continue;
+                int ops = ((Integer.bitCount(state))>>1) ;
+
                 for(int i=0;i<nums.length;i++)
                 {
                     int bit = (state>>i)&1;
@@ -30,21 +27,18 @@ class Solution {
                             continue;
                         int mask = (1<<i | 1<<j);
                         int newState = state ^ mask;
-                        int val = dp[state]+(gcd[Math.min(i,j)][Math.max(i,j)]*counter);
+                        int val = dp[state]+(gcd[Math.min(i,j)][Math.max(i,j)]*ops);
                         if(val>dp[newState])
                         {
                             dp[newState] = Math.max(dp[newState],val);
-                            curr.add(newState);
                         }
                     }
                 }
 
             }
-            prev= curr;
-            counter++;
-        }
         return dp[0];
     }
+
     private int gcd(int i, int j)
     {
         if(i<j)
