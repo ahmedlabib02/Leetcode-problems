@@ -26,10 +26,8 @@ class Solution {
                     int bit = (state>>i)&1;
                     if(bit==0)
                         continue;
-                    for(int j=0;j<nums.length;j++)
+                    for(int j=i+1;j<nums.length;j++)
                     {
-                        if(i==j)
-                            continue;
                         int bit2= (state>>j)&1;
                         if(bit2==0)
                             continue;
