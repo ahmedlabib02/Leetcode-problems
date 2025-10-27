@@ -38,7 +38,7 @@ class Solution {
                 pointer++;
             }
         }
-       System.out.println(arr);
+    //    System.out.println(arr);
         return ans;
     }
 }
