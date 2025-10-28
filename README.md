@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0337-house-robber-iii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0337-house-robber-iii) |
 | [0875-longest-mountain-in-array](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0875-longest-mountain-in-array) |
 | [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
 ## Backtracking
@@ -100,4 +101,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0795-k-th-symbol-in-grammar](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0795-k-th-symbol-in-grammar) |
+## Tree
+|  |
+| ------- |
+| [0337-house-robber-iii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0337-house-robber-iii) |
+## Depth-First Search
+|  |
+| ------- |
+| [0337-house-robber-iii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0337-house-robber-iii) |
+## Binary Tree
+|  |
+| ------- |
+| [0337-house-robber-iii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0337-house-robber-iii) |
 <!---LeetCode Topics End-->
