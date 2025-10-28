@@ -15,27 +15,18 @@
  */
 class Solution {
     public int rob(TreeNode root) {
-        HashMap<TreeNode, Integer> dp = new HashMap<>();
-        int sum  =dp(root,dp);
-        // System.out.println(dp);
-        return sum;
+        int[] res = dfs(root);          // res[0] = notRob, res[1] = rob
+        return Math.max(res[0], res[1]);
     }
-    public int dp(TreeNode node , HashMap<TreeNode, Integer> dp )
-    {
-        if(node==null)
-            return 0;
-        if(dp.containsKey(node))
-            return dp.get(node);
-        int value = node.val;
-        TreeNode left = node.left;
-        TreeNode right = node.right;
-        int take =value;
-        if(left!=null)
-            take += dp(left.left, dp)+ dp(left.right, dp);
-        if(right !=null)
-            take+=dp(right.left, dp) + dp(right.right, dp) ;
-        int skip = dp(left, dp) + dp(right, dp);
-        dp.put(node, Math.max(take, skip));
-        return dp.get(node);
+
+    private int[] dfs(TreeNode node) {
+        if (node == null) return new int[]{0, 0};
+        int[] L = dfs(node.left);
+        int[] R = dfs(node.right);
+
+        int rob    = node.val + L[0] + R[0];
+        int notRob = Math.max(L[0], L[1]) + Math.max(R[0], R[1]);
+
+        return new int[]{notRob, rob};
     }
 }
