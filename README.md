@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0670-maximum-swap](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0670-maximum-swap) |
 | [0738-monotone-increasing-digits](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0738-monotone-increasing-digits) |
+| [0795-k-th-symbol-in-grammar](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0795-k-th-symbol-in-grammar) |
 | [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
 ## Hash Table
 |  |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0795-k-th-symbol-in-grammar](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0795-k-th-symbol-in-grammar) |
 | [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
 ## Number Theory
 |  |
@@ -94,4 +96,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0481-magical-string](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0481-magical-string) |
+## Recursion
+|  |
+| ------- |
+| [0795-k-th-symbol-in-grammar](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0795-k-th-symbol-in-grammar) |
 <!---LeetCode Topics End-->
