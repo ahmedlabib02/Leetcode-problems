@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0731-my-calendar-ii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0731-my-calendar-ii) |
 | [0875-longest-mountain-in-array](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0875-longest-mountain-in-array) |
+| [1034-subarrays-with-k-different-integers](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1034-subarrays-with-k-different-integers) |
 | [1684-find-latest-group-of-size-m](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1684-find-latest-group-of-size-m) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
 | [1906-maximize-score-after-n-operations](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1906-maximize-score-after-n-operations) |
@@ -35,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [1034-subarrays-with-k-different-integers](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1034-subarrays-with-k-different-integers) |
 | [1684-find-latest-group-of-size-m](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1684-find-latest-group-of-size-m) |
 ## Binary Search
 |  |
@@ -113,4 +115,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0337-house-robber-iii](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/0337-house-robber-iii) |
+## Sliding Window
+|  |
+| ------- |
+| [1034-subarrays-with-k-different-integers](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1034-subarrays-with-k-different-integers) |
+## Counting
+|  |
+| ------- |
+| [1034-subarrays-with-k-different-integers](https://github.com/ahmedlabib02/Leetcode-problems/tree/master/1034-subarrays-with-k-different-integers) |
 <!---LeetCode Topics End-->
