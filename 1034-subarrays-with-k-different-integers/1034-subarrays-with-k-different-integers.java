@@ -30,15 +30,8 @@ class Solution {
                 ans+=x-i+1;
             }
             else if(unique>k) {
-                i=x;
-                while (unique > k) {
-                    cnt.put(nums[i], cnt.get(nums[i]) - 1);
-                    if (cnt.get(nums[i]) == 0)
-                        unique--;
-                    i++;
-                }
-                x=i;
-                while (x < j && unique == k) {
+                i=x+1;
+                while (x < j && unique >= k) {
                     cnt.put(nums[x], cnt.get(nums[x]) - 1);
                     if (cnt.get(nums[x]) == 0)
                         unique--;
